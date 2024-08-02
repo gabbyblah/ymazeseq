@@ -12,4 +12,5 @@ Step 5: Hit enter key (do not put sequence here)
 
 Step 6: Enter your sequence
 
-<img width="608" alt="Readme" src="https://github.com/user-attachments/assets/5923af6f-25fc-4213-86b4-859450bbb362">
+<img width="608" alt="Readme" src="https://github.com/user-attachments/assets/d20922f5-14ec-40ef-bf37-096ccdd1e818">
+
