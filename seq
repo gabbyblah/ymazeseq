@@ -1,0 +1,33 @@
+welcome = input("Welcome to the y maze scoring program.\nPlease enter as a block of text without commas\nHit the enter key to input a sequence: ")
+
+while welcome.lower() != "no":
+    sequence = input("input sequence: ")
+ 
+    ABC_count = sequence.count("ABC")
+    abc_count = sequence.count("abc")
+    BCA_count = sequence.count("BCA")
+    bca_count = sequence.count("bca")
+    CAB_count = sequence.count("CAB")
+    cab_count = sequence.count("cab")
+    CBA_count = sequence.count("CBA")
+    cba_count = sequence.count("cba")
+    ACB_count = sequence.count("ACB")
+    acb_count = sequence.count("acb")
+    BAC_count = sequence.count("BAC")
+    bac_count = sequence.count("bac")
+
+    successful_alterations = (ABC_count + BCA_count + CAB_count + CBA_count + ACB_count + BAC_count + abc_count + bca_count + cab_count + cba_count + acb_count + bac_count)
+    total_entries = len(sequence)
+    total_alterations = total_entries - 2
+    percentage_successful = (successful_alterations / total_alterations) * 100
+     
+    print("Your total number of entries is:", total_entries)
+    print("Your total number of alterations is:", total_alterations)
+    print("Your number of successful alterations is:", successful_alterations)
+    print("Your percentage of successful alterations is:",percentage_successful)
+    print(total_entries, total_alterations, successful_alterations, percentage_successful)
+    
+    welcome=input("Press the enter key if you would like to enter another sequence. If not type no: ")
+    
+print("Thank you for using this program!")
+input("\n\nPress the enter key to exit")
