@@ -1,7 +1,8 @@
-welcome = input("Welcome to the y maze scoring program.\nPlease enter as a block of text without commas\nHit the enter key to input a sequence: ")
+def color_text(text, color_code):
+    return f"\033[{color_code}m{text}\033[90m"
 
-while welcome.lower() != "no":
-    sequence = input("input sequence: ")
+while True:
+    sequence = input("Please enter the sequence as a block of text without commas: ")
  
     ABC_count = sequence.count("ABC")
     abc_count = sequence.count("abc")
@@ -21,13 +22,14 @@ while welcome.lower() != "no":
     total_alterations = total_entries - 2
     percentage_successful = (successful_alterations / total_alterations) * 100
      
-    print("Your total number of entries is:", total_entries)
-    print("Your total number of alterations is:", total_alterations)
-    print("Your number of successful alterations is:", successful_alterations)
-    print("Your percentage of successful alterations is:",percentage_successful)
-    print(total_entries, total_alterations, successful_alterations, percentage_successful)
+    print(color_text("Your total number of entries is:", 91), total_entries)
+    print(color_text("Your total number of alterations is:", 93), total_alterations)
+    print(color_text("Your number of successful alterations is:", 92), successful_alterations)
+    print(color_text("Your percentage of successful alterations is:", 94), percentage_successful)
     
     welcome=input("Press the enter key if you would like to enter another sequence. If not type no: ")
+    if welcome.lower() == "no":
+        break
     
-print("Thank you for using this program!")
-input("\n\nPress the enter key to exit")
+print(color_text("Thank you for using this program!",36))
+input(color_text("\n\nPress the enter key to exit", 36))
