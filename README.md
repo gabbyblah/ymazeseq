@@ -8,9 +8,7 @@ Step 3: cd /path_to_file Note: if you have not moved the file location, your fil
 
 Step 4: python3 seq.py
 
-Step 5: Hit enter key (do not put sequence here)
-
-Step 6: Enter your sequence
+Step 5: Enter your sequence
 
 <img width="608" alt="Readme" src="https://github.com/user-attachments/assets/d20922f5-14ec-40ef-bf37-096ccdd1e818">
 
